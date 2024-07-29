@@ -2,7 +2,7 @@
   <v-container class="category-page">
     <v-row class="text-center">
       <v-col cols="12">
-        <h1 class="display-1 text-amber-lighten-2 text-uppercase">{{ category }}</h1>
+        <h1 class=" text-amber-lighten-2 text-uppercase mt-3">{{ category }}</h1>
       </v-col>
       <v-col
       class="card"
@@ -20,6 +20,7 @@
                 :src="product.image"
                 class="w-100 position-relative"
                 v-bind="props"
+                alt="category-img"
                 cover
               ></img>
               <v-btn
@@ -108,7 +109,11 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Marcellus");
+* {
+  font-family: "Marcellus", sans-serif;
 
+}
 .btn-cart:hover {
   color: #eccd69 !important;
   background-color: #222 !important;
@@ -121,5 +126,8 @@ export default {
   .card {
     padding: 20px 32px;
   }
+  h1{
+  font-size: 22px;
+}
 }
 </style>

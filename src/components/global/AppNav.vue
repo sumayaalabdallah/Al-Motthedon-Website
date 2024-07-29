@@ -35,25 +35,25 @@
                 src="../../assets/images/facebook_Gold.png"
                 width="20"
                 height="20"
-                alt=""
+                alt="facebook"
               />
               <img
                 src="../../assets/images/Twitter - Gold.png"
                 width="20"
                 height="20"
-                alt=""
+                alt="Twitter"
               />
               <img
                 src="../../assets/images/instagram_Gold.png"
                 width="20"
                 height="20"
-                alt=""
+                alt="instagram"
               />
               <img
                 src="../../assets/images/Youtube - Gold.png"
                 width="20"
                 height="20"
-                alt=""
+                alt="Youtube"
               />
             </div>
           </div>

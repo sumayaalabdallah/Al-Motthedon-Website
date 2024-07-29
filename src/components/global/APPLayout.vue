@@ -8,7 +8,7 @@
           $route.name == 'check-out'
             ? '0px'
             : windowWidth <= 990
-            ? '10px'
+            ? '60px'
             : '150px'
         }`"
       >
@@ -16,7 +16,6 @@
       </v-main>
       <APPNav v-show="!showFixed && windowWidth > 990" />
       <ResponsiveNav v-show="windowWidth <= 990" />
-      <FixedNav v-show="showFixed && windowWidth > 990" />
       <APPFooter />
     </v-layout>
   </div>
@@ -24,7 +23,6 @@
 
 <script>
 import APPNav from "./AppNav.vue";
-import FixedNav from "./FixedNav.vue";
 import APPFooter from "./AppFooter.vue";
 import ResponsiveNav from "./ResponsiveNav.vue";
 import MenuDrawer from "./MenuDrawer.vue";
@@ -46,7 +44,6 @@ export default {
     APPNav,
     ResponsiveNav,
     APPFooter,
-    FixedNav,
     MenuDrawer,
   },
   mounted() {

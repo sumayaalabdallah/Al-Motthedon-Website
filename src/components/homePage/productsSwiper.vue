@@ -4,9 +4,9 @@
       <div class="mb-16 px-5 position-relative">
         <img
           src="../../assets/images/ALMOTTHEDON COMPANY Logo (3)1.png"
-          alt=""
+          alt="line-img"
           width="20%"
-          class="position-absolute"
+          class="position-absolute line"
           style="right: 49%; top: 60%"
         />
         <h2 style="font-size: 30px; font-weight: 100;" class="title text-center text-uppercase">
@@ -39,9 +39,10 @@
                   :src="item.img"
                   class="w-100 position-relative"
                   v-bind="props"
+                  alt="product-img"
                   cover
                 ></img>
-                <img src="../../assets/images/heart_10826871.png" alt="" class=" position-absolute top-0 right-0 pa-3" width="30">
+                <img src="../../assets/images/heart_10826871.png" alt="heart-img" class=" position-absolute top-0 right-0 pa-3" width="30">
               </div>
             </v-hover>
 
@@ -71,7 +72,6 @@
   </v-container>
 </template>
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import img1 from "../../assets/images/levitating-music-headphones-display.jpg";
@@ -129,27 +129,10 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Marcellus");
 h2 {
   font-family: "Marcellus", sans-serif;
-
   font-size: medium;
 }
+
 .products-swiper {
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 35px;
-    height: 35px;
-    border: 2px solid rgb(95, 95, 95);
-    border-radius: 50%;
-    background-color: white;
-    top: 43%;
-    &::after {
-      font-size: 13px;
-      font-weight: 900;
-      color: rgb(95, 95, 95);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -159,6 +142,15 @@ h2 {
   .swiper-pagination-bullet-active {
     width: 15px;
     height: 15px;
+  }
+}
+@media (max-width: 400px) {
+.line{
+
+   width:45%;
+}
+  h2 {
+   font-size: 21px !important;
   }
 }
 </style>

@@ -11,27 +11,31 @@
             ></v-divider>
           </v-col>
           <v-col cols="12" md="5" sm="6" lg="4" style="flex-wrap: wrap">
-            <img src="../../assets//images/logo.png" alt="" width="80%" />
+            <img
+              src="../../assets//images/logo.png"
+              alt="logo-img"
+              width="80%"
+            />
             <div class="py-1 d-flex justify-start align-start ga-5 pl-16">
               <img
                 src="../../assets/images/facebook_White.png"
                 width="7%"
-                alt=""
+                alt="facebook"
               />
               <img
                 src="../../assets/images/Youtube - White .png"
                 width="7%"
-                alt=""
+                alt="Youtube"
               />
               <img
                 src="../../assets/images/instagram_White.png"
                 width="7%"
-                alt=""
+                alt="instagram"
               />
               <img
                 src="../../assets/images/Twitter - White .png"
                 width="7%"
-                alt=""
+                alt="Twitter"
               />
             </div>
           </v-col>
