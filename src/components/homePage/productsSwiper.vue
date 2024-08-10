@@ -59,7 +59,7 @@
 
             <div class="mt-5" align="center">
               <v-btn
-                class="py-2 px-12 font-weight-light text-uppercase"
+                class="py-2 px-12 font-weight-light text-uppercase more-button"
                 density="combact"
                 style="text-transform: none; border: 1px solid #eccd69 ;"
               >see more</v-btn>
@@ -131,7 +131,10 @@ h2 {
   font-family: "Marcellus", sans-serif;
   font-size: medium;
 }
-
+.more-button:hover {
+  background-color: #eccd69;
+  color: #222;
+}
 .products-swiper {
   .swiper-pagination-bullet {
     width: 10px;

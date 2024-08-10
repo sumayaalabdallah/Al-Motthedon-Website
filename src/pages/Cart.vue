@@ -9,14 +9,28 @@ const itemCount = computed(() => cart.items.length);
 <template>
   <section class="py-5" id="home">
     <v-container>
-      <p class="py-4 text-h5">
-        <v-icon size="40" color="amber-lighten-1"> mdi-cart </v-icon>
-        {{ itemCount }}
-        item(s) :
-      </p>
+      <div class="d-flex justify-space-between">
+        <p class="py-4 text-h5">
+          <v-icon size="40" color="amber-lighten-1"> mdi-cart </v-icon>
+          {{ itemCount }}
+          item(s) :
+        </p>
+
+        <v-btn
+          class="button my-4 px-5"
+          v-if="itemCount > 0"
+          @click="cart.clearCart"
+          >Clear Cart</v-btn
+        >
+      </div>
       <v-row>
         <v-col cols="12">
-          <v-table hover class="bg-amber-lighten-3 text">
+          <v-table
+            v-if="itemCount > 0"
+            style="border: 10px solid #222; border-radius: 20px"
+            hover
+            class="bg-amber-lighten-3 text"
+          >
             <thead>
               <tr>
                 <th>Image</th>
@@ -31,7 +45,7 @@ const itemCount = computed(() => cart.items.length);
                   <v-img
                     rounded
                     width="100%"
-                    height="100%"
+                    height="90%"
                     :src="product.image"
                     alt="cart-img"
                   />
@@ -97,7 +111,15 @@ tr:nth-child(even) {
   font-size: 25px;
 }
 .icon {
-  font-size: 25px;
+  font-size: 30px;
+}
+.button {
+  text-transform: none;
+  border: 1px solid #eccd69;
+}
+.button:hover {
+  background-color: #eccd69;
+  color: #222;
 }
 @media (max-width: 400px) {
   .text {
@@ -105,6 +127,9 @@ tr:nth-child(even) {
   }
   .icon {
     font-size: 17px;
+  }
+  p {
+    font-size: 20px !important;
   }
 }
 </style>

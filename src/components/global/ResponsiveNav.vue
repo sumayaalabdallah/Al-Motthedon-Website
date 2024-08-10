@@ -1,6 +1,6 @@
 <template>
   <div class="res-nav">
-    <v-app-bar style="top: 0">
+    <v-app-bar style="top: 0; border-bottom: 0.7rem solid #eccd69">
       <v-container>
         <v-row class="d-flex align-center justify-center">
           <v-col cols="4" class="d-flex align-center">

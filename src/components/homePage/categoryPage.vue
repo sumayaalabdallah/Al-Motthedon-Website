@@ -50,11 +50,13 @@
           </v-card-text>
           <div>
             <v-btn
-              class="py-2 px-12 my-3 font-weight-light text-uppercase btn"
+              class="py-2 px-12 my-3 font-weight-light text-uppercase button"
               density="combact"
               style="text-transform: none; border: 1px solid #eccd69;"
               @click="viewProduct(product.id)"
-            >see more</v-btn>
+            >
+            <span class="button-content">see more </span>
+</v-btn>
           </div>
         </v-card>
       </v-col>
@@ -118,9 +120,43 @@ export default {
   color: #eccd69 !important;
   background-color: #222 !important;
 }
-.btn:hover {
-  background-color: #eccd69;
-  color: #222;
+.button {
+  position: relative;
+
+  height: 2.5rem;
+  padding: 0 1rem;
+
+  background: #222222;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(236, 205, 105, 1) 10.8%,
+    rgba(34, 34, 34, 1) 94.3%
+  );
+  transition: all 0.475s;
 }
 @media (max-width: 400px) {
   .card {

@@ -30,9 +30,11 @@
                 active-color="amber-lighten-2"
               ></v-rating>
             </div>
-            <v-card-text class="text-h6 text space-line py-0">{{
-              product.description
-            }}</v-card-text>
+            <v-card-text
+              style="line-height: 40px"
+              class="text-h6 text space-line py-0"
+              >{{ product.description }}</v-card-text
+            >
 
             <v-card-title class="text-h4 text text-amber-lighten-2">
               The Price:
@@ -42,7 +44,7 @@
             >
             <v-btn
               @click="cart.addItem(product)"
-              class="mx-auto my-3 pa-5"
+              class="mx-auto my-3 pa-5 font-weight-regular text-h5 btn"
               block
               color="amber-lighten-2"
             >
@@ -93,5 +95,18 @@ export default {
   font-family: "Marcellus", sans-serif;
 
   font-size: medium;
+}
+.btn {
+  letter-spacing: 3px !important;
+}
+.btn:hover {
+  background-color: #2222229d !important;
+  color: #eccd69 !important;
+  border: 1px solid #eccd69;
+
+  transition: all 0.2s ease-out;
+}
+.btn:active {
+  background-color: #eccd6947 !important;
 }
 </style>

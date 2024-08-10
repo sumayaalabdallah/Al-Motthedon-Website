@@ -102,6 +102,17 @@ h1 {
   font-size: 1.5rem;
   font-weight: 100;
 }
+.category-card:hover {
+  background-color: #2222229d;
+  background: linear-gradient(
+    82.3deg,
+    rgba(236, 205, 105, 1) 10.8%,
+    rgba(34, 34, 34, 1) 94.3%
+  );
+  color: #fff;
+  transform: translateY(-8px);
+  transition: all 0.2s ease-out;
+}
 @media (max-width: 400px) {
   .category-card {
     height: 100px;

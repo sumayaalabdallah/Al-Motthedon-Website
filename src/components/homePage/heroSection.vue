@@ -87,7 +87,7 @@ export default {
 }
 @media (max-width: 500px) {
   .img-slider {
-    height: 300px;
+    height: 250px;
   }
 }
 </style>

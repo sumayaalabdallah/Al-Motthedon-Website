@@ -16,7 +16,7 @@
               alt="logo-img"
               width="80%"
             />
-            <div class="py-1 d-flex justify-start align-start ga-5 pl-16">
+            <div class="py-1 d-flex justify-start align-start ga-5 social-img">
               <img
                 src="../../assets/images/facebook_White.png"
                 width="7%"
@@ -127,6 +127,9 @@ ul {
   cursor: pointer;
   color: #eccd69;
 }
+.social-img {
+  padding-left: 6rem !important;
+}
 ul li {
   padding: 5px 1px;
 }
@@ -136,5 +139,22 @@ ul li {
 
   align-items: center;
   justify-content: center;
+}
+ul li:hover {
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .v-col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
