@@ -1,34 +1,34 @@
 <template>
-  <v-container fluid class="pa-0">
-    <div class="position-relative py-8 my-6 mx-0 px-0">
-      <div
-        class="image-container position-absolute"
-        style="right: 25%; top: -100%"
-      >
-        <img
-          src="../../assets/images/portrait-young-woman-with-earrings-with-gems-isolated.jpg"
-          alt="Jewelry"
-          width="400"
-          height="500"
-          class="jewelry-image py-9"
-        />
-      </div>
-
-      <div
-        class="content-container w-50 position-absolute"
-        style="left: 50%; top: 20%"
-      >
-        <h3 class="text-h5 text-center">LUXURY JEWELRY COLLECTION</h3>
-        <p class="pt-7">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris"
-        </p>
-        <button class="more-button">MORE</button>
-      </div>
-      <h2 class="w-100"></h2>
+  <!-- <v-container fluid class="pa-0"> -->
+  <div class="position-relative py-8 my-6 mx-0 px-0">
+    <div
+      class="image-container position-absolute"
+      style="right: 25%; top: -100%"
+    >
+      <img
+        src="../../assets/images/portrait-young-woman-with-earrings-with-gems-isolated.jpg"
+        alt="Jewelry"
+        width="400"
+        height="500"
+        class="jewelry-image py-9"
+      />
     </div>
-  </v-container>
+
+    <div
+      class="content-container w-50 position-absolute"
+      style="left: 50%; top: 20%"
+    >
+      <h3 class="text-h5 text-center">LUXURY JEWELRY COLLECTION</h3>
+      <p class="pt-7">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris"
+      </p>
+      <button class="more-button">MORE</button>
+    </div>
+    <h2 class="w-100"></h2>
+  </div>
+  <!-- </v-container> -->
 </template>
 
 <script></script>

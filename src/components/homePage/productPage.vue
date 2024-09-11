@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-container class="pa-0">
     <h1 class="text-h4 my-16">Product Details</h1>
-    <v-row>
+    <v-row class="pa-0">
       <v-col>
         <v-row justify="center" align="center" height="100%" class="ma-0">
           <v-col md="5" cols="12" class="pa-0" align="center">

@@ -1,6 +1,6 @@
 <template>
   <div class="products-swiper">
-    <v-container class="pt-0">
+    <v-container class="pt-0 px-0">
       <Swiper
         :pagination="{ el: '.swiper-pagination', clickable: true }"
         :modules="modules"

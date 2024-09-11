@@ -4,12 +4,12 @@
     height="140"
     style="border-bottom: 0.9rem solid #eccd69"
   >
-    <v-container>
+    <v-container class="pa-0">
       <v-row>
-        <v-col cols="5">
-          <img src="@/assets//images/logo.png" alt="logo" width="40%" />
+        <v-col cols="4">
+          <img src="@/assets//images/logo.png" alt="logo" width="70%" />
         </v-col>
-        <v-col cols="7" style="">
+        <v-col cols="8" style="">
           <div style="display: flex; gap: 10px; align-items: end">
             <div class="position-relative" style="width: 100%">
               <input

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="px-0">
     <div class="products-swiper pt-3 pb-10">
       <div class="mb-16 px-5 position-relative">
         <img
@@ -7,7 +7,7 @@
           alt="line-img"
           width="20%"
           class="position-absolute line"
-          style="right: 49%; top: 60%"
+          style="right: 50%; top: 60%"
         />
         <h2 style="font-size: 30px; font-weight: 100;" class="title text-center text-uppercase">
           Latest Products

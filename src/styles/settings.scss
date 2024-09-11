@@ -8,3 +8,8 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+@media (min-width: 960px) {
+    .v-container {
+      max-width: 1000px !important;
+    }
+  }
